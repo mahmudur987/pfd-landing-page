@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PFD Courier</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(to right, #f7faff, #fff8f3);
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 container mx-auto">
+    <header>
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center py-4 px-8 bg-transparent">
+        <div class="flex items-center space-x-2">
+          <img
+            src="https://i.ibb.co/LN02L5S/logo.png"
+            alt="logo"
+            class="w-8 h-8"
+          />
+          <span class="text-2xl font-bold text-gray-700">
+            PFD<span class="text-green-500">DELIVERY</span>
+            <span class="text-sm text-gray-400 font-normal">Courier</span>
+          </span>
+        </div>
+
+        <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Coverage</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-green-600 font-semibold hover:underline"
+            >Track Parcel</a
+          >
+          <a href="#" class="text-gray-700 font-medium">Login</a>
+          <a
+            href="#"
+            class="bg-green-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-green-600 transition"
+            >Sign Up</a
+          >
+          <button
+            id="dropdownLanguage"
+            data-dropdown-toggle="dropdownLang"
+            class="border border-gray-300 px-3 py-1 rounded-md text-gray-600"
+          >
+            EN
+          </button>
+        </div>
+
+        <!-- Dropdown menu -->
+        <div
+          id="dropdownLang"
+          class="hidden z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-24"
+        >
+          <ul class="py-2 text-sm text-gray-700">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">EN</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">BN</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-12"
+      >
+        <!-- Text Section -->
+        <div class="max-w-lg space-y-6">
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight"
+          >
+            We
+            <span class="text-green-500 relative">
+              Deliver
+              <span
+                class="absolute left-0 bottom-3 w-full h-1 bg-yellow-400 transform translate-y-2"
+              ></span>
+            </span>
+            <span> Parcel on Time with no Hassle </span>
+          </h1>
+          <p class="text-gray-600 text-lg">
+            Easy Tracking, fast Payment, and safe Delivery across country.
+          </p>
+          <button
+            class="bg-green-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-600 transition"
+          >
+            Become a Merchant
+          </button>
+        </div>
+
+        <!-- Illustration -->
+        <div class="mt-10 md:mt-0">
+          <img
+            src="https://www.fastcourierservicebd.com/wp-content/uploads/2020/11/air-freight-courier-service-500x500-1.jpeg"
+            alt="Courier delivery"
+            class="w-[450px] max-w-full"
+          />
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section>
+        <div
+          class="flex items-center justify-between gap-6 pr-16 mt-[50px] bg-red-300"
+        >
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-green-50 p-3 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">300k+</h3>
+              <p class="text-gray-500">Registered Merchant</p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-green-50 p-3 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">10k+</h3>
+              <p class="text-gray-500">Delivery Man</p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-green-50 p-3 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">500+</h3>
+              <p class="text-gray-500">Delivery Point</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brands Section -->
+      <section class="py-16 px-6 md:px-20 text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-10">
+          Brands Love to Work With Us
+        </h2>
+
+        <!-- Brand Logos Grid -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-center"
+        >
+          <img
+            src="https://i.ibb.co/1fCYZGR/brand1.png"
+            alt="Brand 1"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/LtLZKrs/brand2.png"
+            alt="Brand 2"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/MGmfWRt/brand3.png"
+            alt="Brand 3"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/ZT6r5Ln/brand4.png"
+            alt="Brand 4"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/LvLV9jq/brand5.png"
+            alt="Brand 5"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/Qn7WFmb/brand6.png"
+            alt="Brand 6"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/2kWbZ7Q/brand7.png"
+            alt="Brand 7"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/8jJ6Qcs/brand8.png"
+            alt="Brand 8"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/ZKPMmFV/brand9.png"
+            alt="Brand 9"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+          <img
+            src="https://i.ibb.co/vcg0Hqv/brand10.png"
+            alt="Brand 10"
+            class="mx-auto h-10 md:h-12 object-contain"
+          />
+        </div>
+      </section>
+
+      <!-- Our Service Section -->
+      <section class="py-16 bg-gray-50 text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-12">
+          Our Service
+        </h2>
+
+        <!-- Services Grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 max-w-6xl mx-auto"
+        >
+          <!-- Service 1 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="https://i.ibb.co/LhN13vw/service1.png"
+              alt="Ecommerce Delivery"
+              class="w-28 h-28 object-contain mb-4"
+            />
+            <h3 class="text-lg font-semibold text-gray-700">
+              Ecommerce Delivery
+            </h3>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="https://i.ibb.co/2jL3vTX/service2.png"
+              alt="Pick and Drop"
+              class="w-28 h-28 object-contain mb-4"
+            />
+            <h3 class="text-lg font-semibold text-gray-700">Pick and Drop</h3>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="https://i.ibb.co/9vK6xkM/service3.png"
+              alt="Packaging"
+              class="w-28 h-28 object-contain mb-4"
+            />
+            <h3 class="text-lg font-semibold text-gray-700">Packaging</h3>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="https://i.ibb.co/MN1K7WP/service4.png"
+              alt="Warehousing"
+              class="w-28 h-28 object-contain mb-4"
+            />
+            <h3 class="text-lg font-semibold text-gray-700">Warehousing</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="py-16 px-6 md:px-20 text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-12">
+          Why you should choose <span class="text-green-500">PFD?</span>
+        </h2>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        >
+          <!-- Card 1 -->
+          <div
+            class="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+          >
+            <div class="flex flex-col items-center text-center space-y-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold text-gray-800">
+                Daily pickup, no limits
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Steadfast Courier gives you the opportunity of unlimited pickup.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+          >
+            <div class="flex flex-col items-center text-center space-y-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 1.343-3 3v6h6v-6c0-1.657-1.343-3-3-3z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 12h14M12 5v1"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold text-gray-800">
+                Cash on Delivery
+              </h3>
+              <p class="text-gray-600 text-sm">
+                We collect the cash on behalf of you for every delivery.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+          >
+            <div class="flex flex-col items-center text-center space-y-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 9V7a5 5 0 00-10 0v2a2 2 0 01-2 2H3v7h18v-7h-2a2 2 0 01-2-2z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold text-gray-800">
+                Faster Payment Service
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Multiple payment methods available — cash, bank, or mobile
+                banking.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+          >
+            <div class="flex flex-col items-center text-center space-y-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 17v-6h6v6m2 0H7a2 2 0 01-2-2V7h14v8a2 2 0 01-2 2z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold text-gray-800">
+                Online Management
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Access all your data and reports through your own user
+                dashboard.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+          >
+            <div class="flex flex-col items-center text-center space-y-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6 1A9 9 0 113 12a9 9 0 0118 0z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold text-gray-800">
+                Real-Time Tracking
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Track every consignment with a unique tracking ID in real time.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+          >
+            <div class="flex flex-col items-center text-center space-y-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M18 10c1.657 0 3 1.343 3 3v4H3v-4a3 3 0 013-3h12zm-6-8v4m0 0a4 4 0 11-8 0V2h8z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold text-gray-800">
+                24/7 Customer Service
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Our call center executives are always ready to assist you
+                anytime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- frequently asked questions -->
+
+      <section class="w-full max-w-3xl">
+        <h2 class="text-2xl font-semibold text-center mb-8">
+          Frequently asked Questions
+        </h2>
+
+        <div id="accordion-open" data-accordion="open">
+          <!-- Accordion Item 1 -->
+          <h2 id="accordion-open-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 rounded-t-lg focus:ring-2 focus:ring-blue-200"
+              data-accordion-target="#accordion-open-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-open-body-1"
+            >
+              <span>Why SteadFast Courier?</span>
+              <svg
+                data-accordion-icon
+                class="w-4 h-4 rotate-180 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-1"
+            class="p-5 border border-t-0 border-gray-200"
+            aria-labelledby="accordion-open-heading-1"
+          >
+            <p class="mb-2 text-gray-500">
+              SteadFast Courier stands out for its commitment to delivering
+              parcels nationwide on time and without any hassle. We pride
+              ourselves on offering fast payment, easy tracking, a dedicated
+              customer service team, and ensuring the safe delivery of your
+              parcels.
+            </p>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <h2 id="accordion-open-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 focus:ring-2 focus:ring-blue-200"
+              data-accordion-target="#accordion-open-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-open-body-2"
+            >
+              <span>What is the coverage area of Steadfast Courier?</span>
+              <svg
+                data-accordion-icon
+                class="w-4 h-4 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-2"
+            class="hidden p-5 border border-t-0 border-gray-200"
+            aria-labelledby="accordion-open-heading-2"
+          >
+            <p class="mb-2 text-gray-500">
+              SteadFast Courier operates nationwide, covering all major cities
+              and districts across the country.
+            </p>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <h2 id="accordion-open-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 focus:ring-2 focus:ring-blue-200"
+              data-accordion-target="#accordion-open-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-open-body-3"
+            >
+              <span>What services does Steadfast Courier provide?</span>
+              <svg
+                data-accordion-icon
+                class="w-4 h-4 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-3"
+            class="hidden p-5 border border-t-0 border-gray-200"
+            aria-labelledby="accordion-open-heading-3"
+          >
+            <p class="mb-2 text-gray-500">
+              We provide parcel delivery, cash-on-delivery, same-day service,
+              and return handling services to meet your business and personal
+              needs.
+            </p>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <h2 id="accordion-open-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 rounded-b-lg focus:ring-2 focus:ring-blue-200"
+              data-accordion-target="#accordion-open-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-open-body-4"
+            >
+              <span>Want to know about your delivery charges?</span>
+              <svg
+                data-accordion-icon
+                class="w-4 h-4 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-4"
+            class="hidden p-5 border border-t-0 border-gray-200"
+            aria-labelledby="accordion-open-heading-4"
+          >
+            <p class="mb-2 text-gray-500">
+              Our delivery charges vary depending on weight, size, and location.
+              Please check our pricing page or contact customer support for
+              details.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
