@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PFD Courier</title>
+
+    <!-- SwiperJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -29,7 +37,6 @@
   <body class="font-sans text-gray-800 container mx-auto">
     <header class="flex flex-col">
       <!-- Navbar -->
-
       <nav
         class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
       >
@@ -106,14 +113,14 @@
                 <a
                   href="#"
                   class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Services</a
+                  >Terms and conditions</a
                 >
               </li>
               <li>
                 <a
                   href="#"
                   class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Contact</a
+                  >Contact US</a
                 >
               </li>
             </ul>
@@ -253,65 +260,269 @@
 
       <!-- Brands Section -->
       <section class="py-16 px-6 md:px-20 text-center">
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-10">
-          Brands Love to Work With Us
-        </h2>
-
         <!-- Brand Logos Grid -->
-        <div
-          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-center"
-        >
-          <img
-            src="https://i.ibb.co/1fCYZGR/brand1.png"
-            alt="Brand 1"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/LtLZKrs/brand2.png"
-            alt="Brand 2"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/MGmfWRt/brand3.png"
-            alt="Brand 3"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/ZT6r5Ln/brand4.png"
-            alt="Brand 4"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/LvLV9jq/brand5.png"
-            alt="Brand 5"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/Qn7WFmb/brand6.png"
-            alt="Brand 6"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/2kWbZ7Q/brand7.png"
-            alt="Brand 7"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/8jJ6Qcs/brand8.png"
-            alt="Brand 8"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/ZKPMmFV/brand9.png"
-            alt="Brand 9"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-          <img
-            src="https://i.ibb.co/vcg0Hqv/brand10.png"
-            alt="Brand 10"
-            class="mx-auto h-10 md:h-12 object-contain"
-          />
-        </div>
+        <section class="py-16 bg-white text-center">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-gray-800 mb-12"
+            data-aos="fade-up"
+          >
+            Trusted by Merchants and Partners
+          </h2>
+
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 items-center justify-center max-w-6xl mx-auto px-6"
+          >
+            <!-- Brand 1 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 7h18M3 12h18M3 17h18"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                SwiftMart
+              </p>
+            </div>
+
+            <!-- Brand 2 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-green-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 9.4L7.5 4.2a1 1 0 00-1.5.9v13.8a1 1 0 001.5.9l9-5.2a1 1 0 000-1.8z"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                FreshBite Foods
+              </p>
+            </div>
+
+            <!-- Brand 3 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-indigo-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12h6m2 0a8 8 0 11-16 0 8 8 0 0116 0z"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                ParcelPro
+              </p>
+            </div>
+
+            <!-- Brand 4 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-yellow-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l9-9 9 9M4 10v10h16V10"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                HomeDrop
+              </p>
+            </div>
+
+            <!-- Brand 5 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-red-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 12h14M12 5l7 7-7 7"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                QuickRoute
+              </p>
+            </div>
+
+            <!-- Brand 6 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-teal-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 16h-1v-4h-1m4 0h1m-2 4V9m0 7h-1v-4h-1"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                SpeedEx
+              </p>
+            </div>
+
+            <!-- Brand 7 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-purple-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 20l9-5-9-5-9 5 9 5zm0-10V4m0 6L3 9l9-5 9 5-9 1z"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                MetroFoods
+              </p>
+            </div>
+
+            <!-- Brand 8 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="800"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-orange-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12h6m2 0a8 8 0 11-16 0 8 8 0 0116 0z"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                GoCart Express
+              </p>
+            </div>
+
+            <!-- Brand 9 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="900"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-sky-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 8v8m4-4H8m12 4a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                Dashy Delivery
+              </p>
+            </div>
+
+            <!-- Brand 10 -->
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="zoom-in"
+              data-aos-delay="1000"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-pink-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 3h18l-9 18L3 3z"
+                />
+              </svg>
+              <p class="text-gray-700 font-medium text-sm md:text-base">
+                FleetGo
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- Our Service Section -->
@@ -830,35 +1041,129 @@
 
       <!-- grow your business -->
 
-      <section>
+      <section class="py-10">
         <div
-          class="flex flex-col lg:flex-row items-center justify-between gap-6 pr-16 mt-[50px] bg-red-300 p-5 h-auto"
+          class="flex flex-col lg:flex-row items-center justify-between gap-6 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl px-8 py-10 max-w-7xl mx-auto shadow-lg"
+          data-aos="fade-up"
         >
-          <div class="flex items-center gap-4">
+          <!-- Left: Logo + Text -->
+          <div class="flex items-center gap-4 text-center lg:text-left">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8 mr-3"
-              alt="Flowbite Logo"
+              src="/assets/images/logo.png"
+              alt="Courier Logo"
+              class="h-10 w-64 object-cover"
             />
-            <div class="font-medium text-gray-900 text-xl lg:text-3xl">
-              <div>Parcel and food delivery</div>
-              <div class="lg:text-xl font-normal text-gray-500">
-                Grow your business
-              </div>
+            <div>
+              <h3 class="text-2xl md:text-3xl font-semibold">
+                Parcel & Food Delivery
+              </h3>
+              <p class="text-blue-100 text-sm md:text-base">
+                Connect merchants and customers — grow your business with us.
+              </p>
             </div>
           </div>
-          <a
-            href="#"
-            class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
-          >
-            Become a Merchant
-          </a>
-          <a
-            href="#"
-            class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
-          >
-            Become a delivery partner
-          </a>
+
+          <!-- Right: CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center py-3 px-6 text-sm font-medium bg-white text-blue-700 rounded-full shadow-md hover:bg-blue-50 transition-all duration-300"
+            >
+              Become a Merchant
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center justify-center py-3 px-6 text-sm font-medium bg-yellow-400 text-gray-900 rounded-full shadow-md hover:bg-yellow-300 transition-all duration-300"
+            >
+              Become a Delivery Partner
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback Section -->
+      <section class="py-16 px-6 md:px-20 bg-gray-50">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-3xl font-semibold text-gray-800">
+            What Our Clients Say
+          </h2>
+          <p class="text-gray-600 mt-2">
+            Trusted by thousands of merchants and delivery partners nationwide.
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="max-w-4xl mx-auto">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-pink-200 border border-gray-100 rounded-2xl p-8 shadow-sm text-center"
+                >
+                  <p class="text-gray-700 italic mb-4">
+                    "PFD Courier has completely simplified my parcel deliveries.
+                    Fast, reliable, and excellent tracking!"
+                  </p>
+                  <div class="flex justify-center mb-2">
+                    <img
+                      src="https://i.ibb.co/3FCWmKt/avatar1.png"
+                      alt="User 1"
+                      class="w-14 h-14 rounded-full"
+                    />
+                  </div>
+                  <h4 class="font-semibold text-gray-800">Rafi Ahmed</h4>
+                  <p class="text-gray-500 text-sm">Owner, Rafi’s Mart</p>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-pink-200 border border-gray-100 rounded-2xl p-8 shadow-sm text-center"
+                >
+                  <p class="text-gray-700 italic mb-4">
+                    "Their real-time tracking and customer support are
+                    top-notch. Highly recommend for small business owners."
+                  </p>
+                  <div class="flex justify-center mb-2">
+                    <img
+                      src="https://i.ibb.co/XzvPym6/avatar2.png"
+                      alt="User 2"
+                      class="w-14 h-14 rounded-full"
+                    />
+                  </div>
+                  <h4 class="font-semibold text-gray-800">Mehedi Hasan</h4>
+                  <p class="text-gray-500 text-sm">E-commerce Seller</p>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-pink-200 border border-gray-100 rounded-2xl p-8 shadow-sm text-center"
+                >
+                  <p class="text-gray-700 italic mb-4">
+                    "Delivery is always on time and their support team is very
+                    responsive. Great experience overall!"
+                  </p>
+                  <div class="flex justify-center mb-2">
+                    <img
+                      src="https://i.ibb.co/VphGbb8/avatar3.png"
+                      alt="User 3"
+                      class="w-14 h-14 rounded-full"
+                    />
+                  </div>
+                  <h4 class="font-semibold text-gray-800">Nusrat Jahan</h4>
+                  <p class="text-gray-500 text-sm">Small Business Owner</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination mt-6"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -885,6 +1190,24 @@
         duration: 1000, // animation duration in ms
         once: true, // whether animation happens only once
         offset: 100, // offset (in px) from the original trigger point
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- SwiperJS Init -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
       });
     </script>
   </body>
