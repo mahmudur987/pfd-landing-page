@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>মূল্য তালিকা | PFD Courier</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(to bottom right, #f8fbff, #ffffff);
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800">
+    <header class="flex flex-col">
+      <!-- Navbar -->
+      <nav
+        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1"
+        >
+          <a
+            href="/index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="/assets/images/pfd.jpg"
+              class="h-20 object-cover w-32 border border-gray-100 rounded-lg"
+              alt="Flowbite Logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <a href="#grow-your-business">
+              <button
+                type="button"
+                class="text-white bg-red-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Get started
+              </button>
+            </a>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="/index.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pricing.html"
+                  class="block visited:text-blue-700 py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/terms.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Terms and conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contact.html "
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact US</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Pricing Section -->
+    <section class="py-16 px-6 md:px-24 bg-gray-50 mt-[100px]">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
+          মূল্য তালিকা
+        </h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          আপনার ব্যবসার প্রয়োজন অনুযায়ী প্যাকেজ বেছে নিন। আমাদের সেবায় রয়েছে
+          নির্ভরযোগ্যতা, দ্রুততা এবং স্বচ্ছ মূল্য নির্ধারণ।
+        </p>
+      </div>
+
+      <figure class="w-vw p-2">
+        <img src="/assets/images/delivery charge.jpg" alt="" class="mx-auto" />
+      </figure>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-6 md:px-24 bg-white border-t">
+      <div class="max-w-4xl mx-auto text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">
+          সাধারণ প্রশ্নাবলী (FAQ)
+        </h2>
+        <p class="text-gray-600">
+          আমাদের মূল্য নির্ধারণ বা সার্ভিস নিয়ে সাধারণ কিছু প্রশ্নের উত্তর।
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto divide-y divide-gray-200">
+        <details class="py-4">
+          <summary class="text-lg font-semibold cursor-pointer text-green-600">
+            ডেলিভারি চার্জ কীভাবে নির্ধারণ করা হয়?
+          </summary>
+          <p class="mt-2 text-gray-700">
+            পণ্যের ওজন, গন্তব্য এবং ডেলিভারির ধরণ (শিডিউল, ইনস্ট্যান্ট বা সেম
+            ডে) অনুযায়ী চার্জ নির্ধারণ করা হয়।
+          </p>
+        </details>
+
+        <details class="py-4">
+          <summary class="text-lg font-semibold cursor-pointer text-green-600">
+            ঢাকার বাইরে ডেলিভারি করা যায় কি?
+          </summary>
+          <p class="mt-2 text-gray-700">
+            হ্যাঁ, আমরা চট্টগ্রাম, নারায়ণগঞ্জ, সাভার, কেরানিগঞ্জ ও গাজীপুরসহ
+            অন্যান্য জেলাতেও ডেলিভারি সেবা দিচ্ছি।
+          </p>
+        </details>
+
+        <details class="py-4">
+          <summary class="text-lg font-semibold cursor-pointer text-green-600">
+            ইনস্যুরেন্স সুবিধা কাদের জন্য প্রযোজ্য?
+          </summary>
+          <p class="mt-2 text-gray-700">
+            ইনস্যুরেন্স সুবিধা শুধুমাত্র প্রিমিয়াম ডেলিভারি ক্লায়েন্টদের জন্য
+            প্রযোজ্য।
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-8 mt-12">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6"
+      >
+        <p class="text-sm">© 2025 PFD Courier. সর্বস্বত্ব সংরক্ষিত।</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="privacy.html" class="hover:text-green-400">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-green-400">Terms</a>
+          <a href="contact.html" class="hover:text-green-400">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
